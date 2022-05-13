@@ -125,6 +125,27 @@ ul {
 a {
     text-decoration: none;
 }
+.scroll-up {
+    position: fixed;
+    bottom: 1.2em;
+    right: -100px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 99;
+    opacity: .6;
+    border-radius: 10px;
+    transition: var(--main-transition);
+}
+.scroll-up:hover {
+    opacity: 1;
+    background-color: var(--main-color-alt);
+}
+.scroll-up.show {
+    right: 1.5em;
+}
 /* end component */
 /* start header */
 header {
@@ -1265,6 +1286,9 @@ header .mega-menu .links li i {
     position: relative;
     opacity: 0.8;
     transition: var(--main-transition);
+}
+.stats .box:last-child {
+    grid-column: 2;
 }
 .stats .box::before,
 .stats .box::after {
