@@ -124,8 +124,8 @@ ul {
 .scroll-up {
     display: none;
     position: fixed;
-    bottom: 1.2em;
-    right: 1.5em;
+    bottom: 20px;
+    right: 20px;
     border: none;
     background-color: var(--main-color);
     color: white;
@@ -1287,9 +1287,6 @@ header .mega-menu .links li i {
     position: relative;
     opacity: 0.8;
     transition: var(--main-transition);
-}
-.stats .box:last-child {
-    grid-column: 2;
 }
 .stats .box::before,
 .stats .box::after {
