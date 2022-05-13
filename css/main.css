@@ -21,6 +21,7 @@ html {
 }
 body {
     font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
 }
 ul {
     list-style: none;
@@ -120,22 +121,17 @@ ul {
     bottom: 200px;
     left: 0;
 }
-/* end global rules */
-/* start component */
-a {
-    text-decoration: none;
-}
 .scroll-up {
+    display: none;
     position: fixed;
     bottom: 1.2em;
-    right: -100px;
+    right: 1.5em;
     border: none;
     background-color: var(--main-color);
     color: white;
     padding: 10px 15px;
     cursor: pointer;
-    z-index: 99;
-    opacity: .6;
+    z-index: 9;
     border-radius: 10px;
     transition: var(--main-transition);
 }
@@ -144,7 +140,12 @@ a {
     background-color: var(--main-color-alt);
 }
 .scroll-up.show {
-    right: 1.5em;
+    display: block;
+}
+/* end global rules */
+/* start component */
+a {
+    text-decoration: none;
 }
 /* end component */
 /* start header */
@@ -1286,6 +1287,9 @@ header .mega-menu .links li i {
     position: relative;
     opacity: 0.8;
     transition: var(--main-transition);
+}
+.stats .box:last-child {
+    grid-column: 2;
 }
 .stats .box::before,
 .stats .box::after {
