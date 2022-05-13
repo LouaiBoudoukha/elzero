@@ -1287,9 +1287,6 @@ header .mega-menu .links li i {
     opacity: 0.8;
     transition: var(--main-transition);
 }
-.stats .box:last-child {
-    grid-column: 2;
-}
 .stats .box::before,
 .stats .box::after {
     content: '';
